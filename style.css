@@ -203,21 +203,24 @@ a:hover{
     letter-spacing: 10px;
 }
 
-.News{
+.News-White{
     grid-column: 3 / 11;
     grid-row: 7 / 13;
     background-color: white;
-    overflow-x: hidden;
-}
-
-
-   .marquee {
-    margin: 0 auto;
-    white-space: nowrap;
     overflow: hidden;
-    position: absolute;
-    grid-column: 3 / 10;
-    grid-row: 7;
+  }
+
+  .Carousel-1 {
+    display:block;
+    -webkit-animation: linear text-slide 20s infinite ;
+    -moz-animation: linear text-slide 20s infinite ;
+    -o-animation: linear text-slide 20s infinite ;
+    -ms-animation: linear text-slide 20s infinite ;
+    animation: linear text-slide 20s infinite ;
+    margin-left:-100%;
+    padding:0 5px;
+    text-align:left;
+    height: 100px;
     font-weight: normal;
     font-style: normal;
     font-family: DELIRIUM NCV;
@@ -225,44 +228,52 @@ a:hover{
     color: white;
     text-shadow: #000000 2px 2px, #000000 -2px 2px, #000000 -2px -2px, #000000 2px -2px;
     letter-spacing: 3px;
-    z-index: 3;
-  }
-  
-  .marquee span {
-    display: inline-block;
-    animation: marquee 5s linear infinite;
-  }
-
-  .marquee2 {
-    margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
-    position: absolute;
-    grid-column: 3 / 10;
-    grid-row: 7;
+  }
+
+  @-webkit-keyframes text-slide {
+    0%, 100% {margin-left:0;}
+    99.99% {margin-left:-100%;}
+   }
+  @-moz-keyframes text-slide {
+    0%, 100% {margin-left:0;}
+    99.99% {margin-left:-100%;}
+   }
+  @-o-keyframes text-slide {
+    0%, 100% {margin-left:0;}
+    99.99% {margin-left:-100%;}
+   }
+  @-ms-keyframes text-slide {
+    0%, 100% {margin-left:0;}
+    99.99% {margin-left:-100%;}
+   }
+  @keyframes text-slide {
+    0%, 100% {margin-left:0;}
+    99.99% {margin-left:-100%;}
+   }
+
+   .Carousel-2 {
+    display:block;
+    -webkit-animation: linear text-slide 20s infinite ;
+    -moz-animation: linear text-slide 20s infinite ;
+    -o-animation: linear text-slide 20s infinite ;
+    -ms-animation: linear text-slide 20s infinite ;
+    animation: linear text-slide 20s infinite ;
+    margin-left:-100%;
+    padding:0 5px;
+    text-align:left;
+    height: 100px;
     font-weight: normal;
     font-style: normal;
     font-family: DELIRIUM NCV;
     font-size: 6.5em;
     color: white;
-    padding-left: 100%;
     text-shadow: #000000 2px 2px, #000000 -2px 2px, #000000 -2px -2px, #000000 2px -2px;
     letter-spacing: 3px;
-    z-index: 3;
+    white-space: nowrap;
+    overflow: hidden;
 
-  }
-
-  .marquee2 span {
-    display: inline-block;
-    animation: marquee 5s linear infinite;
-  }
-
-
-  @keyframes marquee {
-    0% {
-      transform: translate(0, 0);
-    }
-    100% {
-      transform: translate(-100%, 0);
-    }
+    position: relative;
+    top: 90%;
   }
