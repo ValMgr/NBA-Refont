@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  @font-face {
+    font-family: 'DELIRIUM NCV';
+    src: url('font/DELIRIUMNCV.woff2') format('woff2'),
+        url('font/DELIRIUMNCV.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    background-color: #1A1A1A;
+    height: 2400px;
+}
+
+.MenuLinks{
+    color: white;
+    font-family: DELIRIUM NCV;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.5em;
+    text-decoration: none;
+}
+
+#Score{
+    position: relative;
+    left: 15%;
+}
+
+#Schedule{
+    position: relative;
+    left: 25%;
+}
+
+#News{
+    position: relative;
+    left: 45%;
+}
+
+#Video{
+    position: relative;
+    left: 55%;
+}
+
+#MainMenu{
+    position: relative;
+    left: 35%;
+}
+
+#Shop{
+    position: relative;
+    left: 65%;
+}
+
+.LastNew{
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    width: 100vw;
+}
+
+
+#FrontImg{
+    position: relative;
+    z-index: 1;
+    box-shadow: #ffffff 25px 25px;
+}
+
+#BackImg{
+    position: relative;
+    left: 10%;
+    opacity: 0.3;
+}
+
+.NBA{
+    font-family: DELIRIUM NCV;
+    font-weight: normal;
+    font-style: normal;
+    position: relative;
+    color: white;
+}
+
+
+a:hover{
+    color: red;
+    text-decoration: underline;
+    transition: all .3s ease;
+}
+
+/* BURGER MENU */
+
+.BugerMenu {
+    position: relative;
+    left: 5%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .bar1{
+    width: 35px;
+  }
+  .bar2{
+      width: 25px;
+  }
+  .bar3{
+      width: 15px;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: red;
+
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+    width: 35px;
+    background-color: red;
+  }
+
+
+
+  /* LA GRILLE SA MERE */
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .header {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 10px;
+    position: absolute;
+    width: 100vw;
+    z-index: 2;
+  }
+
+  /* Image Principale */
+  .two { 
+    grid-column: 3 / 8;
+    grid-row: 3 / 6;
+  }
+  /* Image background */
+  .three{
+    grid-column: 6 / 11;
+    grid-row: 2 / 7;
+  }
+  .LastNewTitle{
+    grid-column: 7 / 12;
+    grid-row: 3;
+    padding: 10px;
+    position: relative;
+    color: black;
+    font-family: DELIRIUM NCV;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 7em;
+    text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff 1px -1px;
+    z-index: 1;
+  }
+  .Nba_text{
+    grid-column: 8 / 12;
+    grid-row: 4;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: Source Sans Pro;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 1.3em;
+  }
+.NBA_H2{
+    position: relative;
+    left: 25%;
+    grid-column: 8 / 11;
+    grid-row: 5;
+    color: white;
+    opacity: 0.15;
+    font-weight: normal;
+    font-style: normal;
+    font-family: DELIRIUM NCV;
+    font-size: 7em;
+    letter-spacing: 10px;
+}
+
+.News{
+    grid-column: 3 / 11;
+    grid-row: 7 / 13;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+
+   .marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    grid-column: 3 / 10;
+    grid-row: 7;
+    font-weight: normal;
+    font-style: normal;
+    font-family: DELIRIUM NCV;
+    font-size: 6.5em;
+    color: white;
+    text-shadow: #000000 2px 2px, #000000 -2px 2px, #000000 -2px -2px, #000000 2px -2px;
+    letter-spacing: 3px;
+    z-index: 3;
+  }
+  
+  .marquee span {
+    display: inline-block;
+    animation: marquee 5s linear infinite;
+  }
+
+  .marquee2 {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    grid-column: 3 / 10;
+    grid-row: 7;
+    font-weight: normal;
+    font-style: normal;
+    font-family: DELIRIUM NCV;
+    font-size: 6.5em;
+    color: white;
+    padding-left: 100%;
+    text-shadow: #000000 2px 2px, #000000 -2px 2px, #000000 -2px -2px, #000000 2px -2px;
+    letter-spacing: 3px;
+    z-index: 3;
+
+  }
+
+  .marquee2 span {
+    display: inline-block;
+    animation: marquee 5s linear infinite;
+  }
+
+
+  @keyframes marquee {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
