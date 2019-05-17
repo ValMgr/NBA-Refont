@@ -16,7 +16,7 @@
 
 body{
     background-color: #1A1A1A;
-    height: 2400px;
+
 }
 
 .MenuLinks{
@@ -50,8 +50,8 @@ body{
 
 #MainMenu{
     position: relative;
-    left: 35%;
-}
+    left: 34%;
+    }
 
 #Shop{
     position: relative;
@@ -104,7 +104,7 @@ a:hover{
   
   .bar1, .bar2, .bar3 {
     
-    height: 5px;
+    height: 3px;
     background-color: rgb(255, 255, 255);
     margin: 6px 0;
     transition: 0.4s;
@@ -114,15 +114,15 @@ a:hover{
     width: 35px;
   }
   .bar2{
-      width: 25px;
+      width: 35px;
   }
   .bar3{
-      width: 15px;
+      width: 35px;
   }
   
   .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+    transform: rotate(-45deg) translate(-8px, 6px);
     background-color: red;
 
   }
@@ -130,9 +130,8 @@ a:hover{
   .change .bar2 {opacity: 0;}
   
   .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-    width: 35px;
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
     background-color: red;
   }
 
@@ -171,23 +170,13 @@ a:hover{
     grid-row: 3;
     padding: 10px;
     position: relative;
-    color: black;
+    color: #1A1A1A;
     font-family: DELIRIUM NCV;
     font-weight: normal;
     font-style: normal;
     font-size: 7em;
-    text-shadow: #ffffff 1px 1px, #ffffff -1px 1px, #ffffff -1px -1px, #ffffff 1px -1px;
+    text-shadow: #ffffff 2px 2px, #ffffff -2px 2px, #ffffff -2px -2px, #ffffff 2px -2px;
     z-index: 1;
-  }
-  .Nba_text{
-    grid-column: 8 / 12;
-    grid-row: 4;
-    position: relative;
-    color: rgb(255, 255, 255);
-    font-family: Source Sans Pro;
-    font-weight: lighter;
-    font-style: normal;
-    font-size: 1.3em;
   }
 .NBA_H2{
     position: relative;
@@ -204,10 +193,13 @@ a:hover{
 }
 
 .News-White{
+    
     grid-column: 3 / 11;
-    grid-row: 7 / 13;
+    grid-row: 9 / 15;
     background-color: white;
-    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    max-height: 740px;
   }
 
   .Carousel-1 {
@@ -275,5 +267,218 @@ a:hover{
     overflow: hidden;
 
     position: relative;
-    top: 90%;
+    top: 540px;
+
+    animation-direction: reverse;
+  }
+
+  #News1{
+    grid-column: 2 / 4;
+    grid-row: 12;
+    color: white;
+    font-size: 7.5em;
+    opacity: 0.3;
+    font-weight: normal;
+    font-style: normal;
+    font-family: DELIRIUM NCV;
+  }
+
+  #News2{
+    grid-column: 2 / 4;
+    grid-row: 13;
+    color: white;
+    font-size: 7.5em;
+    opacity: 0.3;
+    font-weight: normal;
+    font-style: normal;
+    font-family: DELIRIUM NCV;
+    transform: translateY(-30px);
+  }
+
+  #News3{
+    grid-column: 2 / 4;
+    grid-row: 14;
+    color: white;
+    font-size: 7.5em;
+    opacity: 0.3;
+    font-weight: normal;
+    font-style: normal;
+    font-family: DELIRIUM NCV;
+    transform: translateY(-60px);
+  }
+
+
+  .footer-white{
+    grid-column: 1 / 13;
+    grid-row: 19;
+    background-color: white;
+  }
+
+  .footer{
+    grid-row: 20 / 23;
+    grid-column: 4 / 10;
+    position: relative;
+  }
+
+  .NBA-Footer{
+
+    position: absolute;
+    left: 80%;
+    top: 20%;
+
+    font-weight: normal;
+    font-style: normal;
+    font-family: DELIRIUM NCV;
+    color: white;
+    font-size: 7.5em;
+
+  }
+
+  .Link-Footer{
+    color: rgb(255, 255, 255);
+    font-family: Source Sans Pro;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 1.3em;
+
+  }
+
+  #N1{
+    position: absolute;
+    left: 10%;
+    top: 25%;
+  }
+  #N2{
+    position: absolute;
+    left: 10%;
+    top: 35%;
+  }
+  #N3{
+    position: absolute;
+    left: 10%;
+    top: 45%;
+  }
+  #N4{
+    position: absolute;
+    left: 40%;
+    top: 25%;
+
+  }
+  #N5{
+    position: absolute;
+    left: 40%;
+    top: 35%;
+
+  }
+  #N6{
+    position: absolute;
+    left: 40%;
+    top: 45%;
+
+  }
+  
+
+  .LastScore{
+    grid-column: 1 / 13;
+    grid-row: 7;
+    width: 100%;
+  }
+
+  .NewsImg1{
+    grid-column: 4 / 8;
+    grid-row: 10 / 14;
+    position: relative;
+    z-index: 2;
+    margin-left: -60px;
+  }
+  
+  .NewsImg2{
+    grid-column: 7 / 11;
+    grid-row: 10 / 12;
+    position: relative;
+    z-index: 2;
+  }
+
+  .NewsImg3{
+    grid-column: 7 / 11;
+    grid-row: 12 / 14;
+    position: relative;
+    z-index: 2;
+  }
+
+  .NextMatch1{
+    grid-column: 2 / 8;
+    grid-row: 16;
+    margin-left: -40px;
+  }
+
+  .NextMatch2{
+    grid-column: 8 / 13;
+    grid-row: 16;
+    margin-left: -40px;
+
+  }
+
+  .NextMatchText1{
+    color: white;
+    font-size: 7.5em;
+    opacity: 0.3;
+    font-weight: normal;
+    font-style: normal;
+    font-family: DELIRIUM NCV;
+    grid-column: 2 / 6;
+    grid-row: 16;
+    transform: translateY(-50px);
+  }
+  .NextMatchText2{
+    color: white;
+    font-size: 4em;
+    font-weight: normal;
+    font-style: normal;
+    font-family: DELIRIUM NCV;
+    grid-column: 2 / 6;
+    grid-row: 16;
+    transform: translate(-15px, -30px);
+  }
+  .NextMatchText3{
+    color: white;
+    font-size: 7.5em;
+    opacity: 0.3;
+    font-weight: normal;
+    font-style: normal;
+    font-family: DELIRIUM NCV;
+    grid-column: 6 / 9;
+    grid-row: 17;
+    transform: translate(-25px, -100px);
+  }
+  .NextMatchText4{
+    color: white;
+    font-size: 3.5em;
+    font-weight: normal;
+    font-style: normal;
+    font-family: DELIRIUM NCV;
+    grid-column: 11 / 12;
+    grid-row: 17;
+  }
+
+  #Twitter{
+    position: relative;
+    left: 60%;
+    top: 25%;
+  }
+
+  #Youtube{
+    position: relative;
+    left: 50%;
+    top: 25%;
+  }
+  #Facebook{
+    position: relative;
+    left: 40%;
+    top: 25%;
+  }
+  #Instagram{
+    position: relative;
+    left: 30%;
+    top: 25%;
   }
